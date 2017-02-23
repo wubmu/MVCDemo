@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet-mapping>
+        <servlet-name>IndexServlert</servlet-name>
+        <url-pattern>/Servlet/IndexServlet</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>/Servlet/IndexServlet</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <servlet-name>IndexServlert</servlet-name>
+        <servlet-class>com.wwwyb.web.controller.IndexServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegistUIServlet</servlet-name>
+        <url-pattern>/Servlet/RegistUIServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>RegistUIServlet</servlet-name>
+        <servlet-class>com.wwwyb.web.controller.RegistUIServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/Servlet/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.wwwyb.web.controller.LoginUIServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegistServlet</servlet-name>
+        <url-pattern>/Servlet/RegistServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+
+        <servlet-name>RegistServlet</servlet-name>
+        <servlet-class>com.wwwyb.web.controller.RegistServlet</servlet-class>
+    </servlet>
+    <welcome-file-list>
+        <welcome-file>/WEB-INF/pages/index.jsp</welcome-file>
+    </welcome-file-list>
+    <!--<servlet>-->
+        <!--<servlet-name>logicUIServlet</servlet-name>-->
+        <!--<servlet-class>com.wwwyb.web.controller</servlet-class>-->
+    <!--</servlet>-->
+</web-app>
